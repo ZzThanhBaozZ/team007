@@ -15,3 +15,7 @@ Default set {
     font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
 }
+
+Icon package {
+    Font Awesome: https://fontawesome.com/search?o=r&m=free
+}
