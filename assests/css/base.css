@@ -1,15 +1,167 @@
 :root {
-    --primary-color: #0065CA;
-    --white-color: #fff;
-    --text-color: #333;
-    --black-color: #000;
-    --yellow-color: #FEBD17;
+  --primary-color: #0065CA;
+  --white-color: #fff;
+  --text-color: #333;
+  --black-color: #000;
+  --yellow-color: #FEBD17;
 }
 
 html {
-    font-size: 62.5%;
-    line-height: 1.6rem;
-    font-family: 'Montserrat', sans-serif;
-    box-sizing: border-box;
+  font-size: 62.5%;
+  line-height: 1.6rem;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+  height: 200vh;
+}
+
+.hero-container {
+  display: flex;
+  height: 5%;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-color);
+}
+.hero-container .start {
+  margin-left: 5%;
+  display: flex;
+  align-items: center;
+}
+.hero-container .start .logo {
+  height: 7.5rem;
+  margin: 1em;
+}
+.hero-container .start .line-verti {
+  height: 7rem;
+}
+
+.body1-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5%;
+  margin-left: 5%;
+  height: 500px;
+}
+.body1-container .body1-group1 .body1-info1 {
+  font-size: 1.75rem;
+  font-weight: bolder;
+  margin: 0.5rem 0 0.5rem 0;
+}
+.body1-container .body1-group1 .body1-info2 {
+  font-size: 3rem;
+  font-weight: bolder;
+  margin: 2rem 0px 2rem 0px;
+}
+.body1-container .body1-group1 .body1-info3 {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: var(--yellow-color);
+  margin: 1rem 0 1rem 0;
+}
+.body1-container .body1-group1 .body1-info4 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 1rem 0 1rem 0;
+}
+
+.body2-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  background-color: #E7EDFA;
+}
+.body2-container .body2-top .body2-top-info {
+  font-size: 1.75rem;
+  font-weight: bolder;
+}
+.body2-container .body2-bot .body2-bot-info {
+  font-size: 4rem;
+  font-weight: bolder;
+  color: var(--yellow-color);
+}
+
+.body3-container {
+  display: flex;
+  flex-direction: column;
+  margin: 5% 5% 0 5%;
+}
+.body3-container .group-info .body3-yellow-headinfo {
+  color: var(--yellow-color);
+  font-size: 1.5rem;
+  font-weight: bolder;
+  margin: 1rem 0 1rem 0;
+}
+.body3-container .group-info .body3-black-bodyinfo {
+  width: 30%;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  font-weight: bolder;
+  margin: 1.25rem 0 1.25rem 0;
+}
+.body3-container .group-info .body3-black-footinfo {
+  width: 23%;
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 1rem 0 1rem 0;
+}
+.body3-container .body3-group2-right {
+  margin-left: auto;
+  text-align: right;
+  padding: 5rem 0 5rem 0;
+}
+
+.see-more {
+  display: flex;
+  flex-direction: column;
+}
+.see-more .see-more-typo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--yellow-color);
+  margin: 10px 0 10px 0;
+}
+.see-more .yellow-line-hori {
+  width: 8rem;
+}
+
+#study-info .body3-black-bodyinfo {
+  margin-left: auto;
+}
+#study-info .body3-black-footinfo {
+  margin-left: auto;
+}
+
+#see-more2 .yellow-line-hori {
+  margin-left: auto;
+}
+
+.footer-container {
+  height: 115px;
+  display: flex;
+  flex-direction: row;
+  background-color: var(--primary-color);
+}
+.footer-container .footer-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 0;
+  justify-content: center;
+}
+.footer-container .footer-white-NEU {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+.footer-container .footer-white-NEU .white-NEU {
+  height: 30px;
+  margin-right: 6rem;
+}/*# sourceMappingURL=base.css.map */
