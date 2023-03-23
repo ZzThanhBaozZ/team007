@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/30d0976aea.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./assests/css/login_main.css">
+    <link rel="stylesheet" href="./assests/css/login_res.css">
+
+</head>
+<body>
+    <div class="body-container">
+        <div class="first-wrapper">
+            <div class="login__intro">
+                <div class="intro__text">
+                    <p class="intro__text-head">NEU</p>
+                    <p class="intro__text-body">NATIONAL<br>ECONOMICS UNIVERSITY</p>
+                    <p class="intro__text-foot">ĐẠI HỌC CHÍNH QUY</p>
+                    <div class="intro__text-line"></div>
+                </div>
+            </div>
+        
+            <div class="recent-login">
+                <div class="recent-login__text">
+                    <p class="recent-login__text-head">Đăng nhập gần đây</p>
+                    <p class="recent-login__text-head-mobile">Chọn tài khoản của bạn</p>
+                    <p class="recent-login__text-body">Nhấp vào ảnh của bạn hoặc thêm tài khoản</p>
+                </div>
+        
+                <div class="recent-login__list">
+                    <div class="recent-login__item">
+                        
+                        <div class="recent-login__item-contain">
+                        
+                                <img src="./img/user-avt.png" alt="" class="recent-login__item-avt">
+                            
+                                <p class="recent-login__item-username">11218387</p>
+                            
+                        </div>
+                        <i class="recent-login__item-remove fa-solid fa-circle-xmark"></i>
+                    </div>
+                    
+                    <div class="recent-login__item">
+                        
+                        <div class="recent-login__item-contain">
+                            
+                                <img src="./img/user-avt.png" alt="" class="recent-login__item-avt">
+                            
+                                <p class="recent-login__item-username">11218387</p>
+                            
+                        </div>
+                        <i class="recent-login__item-remove fa-solid fa-circle-xmark"></i>
+                    </div>
+    
+                    <div class="recent-login__item">
+                        
+                        <div class="recent-login__item-contain">
+                            
+                                <img src="./img/user-avt.png" alt="" class="recent-login__item-avt">
+                        
+                                <p class="recent-login__item-username">11218387</p>
+                            
+                        </div>
+                        <i class="recent-login__item-remove fa-solid fa-circle-xmark"></i>
+                    </div>
+    
+                    <div class="recent-login__item-add recent-login__item">
+                        <i class="recent-login__item-add-icon fa-solid fa-circle-plus"></i>
+                        <p class="recent-login__item-user-add">Thêm...</p> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="second-wrapper">
+            <p class="login-mobile-text">Đăng nhập tài khoản khác</p>
+            <img src="./img/logo.svg" alt="" class="second-wrapper-img">
+            <div class="login">
+                
+                <div class="login-text">
+                    <p class="login-text__head">TRƯỜNG ĐẠI HỌC</p>
+                    <p class="login-text__body">KINH TẾ QUỐC DÂN</p>
+                    <p class="login-text__foot">cổng thông tin đào tạo</p>
+                    <img src="./img/div-line.svg" alt="" class="login-text__div">
+                </div>
+    
+                <form action="" class="login-input">
+                    <div class="login-input__user">
+                        <p class="login-input__text-user">Tên đăng nhập</p>
+                        <input type="text" name="username" class="login-input__user-form" required>
+                    </div>
+                    
+                    <div class="login-input__pass">
+                        <div>
+                            <p class="login-input__text-pass">Mật khẩu</p>
+                            <div class="login-input__pass-field">
+                                <input type="password" name="password" class="login-input__user-form" required id="password">
+                                <div class="login-input__pass-wrap">
+                                    <i class="login-input__pass-field-icon fa-solid fa-eye-slash" id="togglePassword"></i>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <a href="#" class="login-input__pass-forgot">Quên mật khẩu?</a>
+                    </div>
+                    <button type="submit" class="login-input__btn">Đăng nhập</button>
+                
+                    <button type="submit" class="login-form__office-btn">
+                        
+                            <div class="login-form__office-img">
+                                <img src="./img/office-logo.png" alt="">
+                            </div>
+                            <p>Đăng nhập với Email sinh viên</p>
+                        
+                    </button>
+    
+                    <button type="submit" class="login-form__office-btn">
+                        
+                            <div class="login-form__office-img">
+                                <img src="./img/office-logo.png" alt="">
+                            </div>
+                            <p>Đăng nhập với Email giảng viên</p>
+                        
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    const togglePassword = document.querySelector("#togglePassword");
+    const password = document.querySelector("#password");
+
+    togglePassword.addEventListener("click", function () {
+        // toggle the type attribute
+        const type = password.getAttribute("type") === "password" ? "text" : "password";
+        password.setAttribute("type", type);
+        
+        // toggle the icon
+        this.classList.toggle("fa-eye");
+    });
+</script>
+
+</html>
