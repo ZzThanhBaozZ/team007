@@ -20,16 +20,15 @@ html {
   box-sizing: border-box;
 }
 
-.hero {
+.header {
   background-color: var(--primary-color);
   margin-bottom: 5rem;
 }
 
-.hero-container {
+.header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
   margin: 0 3rem 0 3rem;
 }
 
@@ -60,8 +59,43 @@ html {
   display: none;
 }
 .start .DHCQ {
-  font-size: 1rem;
+  font-size: 0.75rem;
   color: var(--yellow-color);
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav li {
+  margin: 0 5px;
+}
+nav a {
+  color: var(--white-color);
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+nav .noti {
+  height: 30px;
+}
+nav .log-in {
+  background-color: var(--white-color);
+  border-radius: 20px;
+  padding: 5px 15px 5px 15px;
+}
+nav .log-in-entry {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #000;
 }
 
 #drum-showcase {
@@ -76,7 +110,6 @@ html {
 .body1-container {
   display: flex;
   flex-direction: column;
-  align-items: left;
   margin: 0 3em 0 3em;
 }
 .body1-container .line-hori {
@@ -117,10 +150,11 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 6rem;
 }
 
 .uni-img {
-  height: 20rem;
+  width: max(25rem, 50%);
 }
 
 .body2 {
@@ -134,26 +168,29 @@ html {
 .body3-container {
   display: flex;
   flex-direction: column;
-  align-items: left;
   margin: 0 3em 0 3em;
-  line-height: 2.5em;
+}
+
+.group-info {
+  font-size: 12px;
+  line-height: 2.2em;
 }
 
 .body3-yellow-headinfo {
-  font-size: 1.5rem;
+  font-size: 1em;
   font-weight: bolder;
   color: var(--yellow-color);
 }
 
 .body3-black-bodyinfo {
-  font-size: 2rem;
+  font-size: 2em;
   font-weight: bolder;
-  width: min(305px, 85%);
+  width: min(305px, 100%);
   margin: 1rem 0 1rem 0;
 }
 
 .body3-black-footinfo {
-  font-size: 1.25rem;
+  font-size: 1em;
   font-weight: 500;
   width: min(350px, 85%);
   margin: 2.5rem 0 2.5rem 0;
@@ -184,9 +221,8 @@ html {
 
 #body3-group2 {
   display: flex;
+  justify-content: space-between;
   text-align: right;
-  align-items: right;
-  justify-content: right;
 }
 #body3-group2 .body3-black-bodyinfo, #body3-group2 .body3-black-footinfo {
   margin-left: auto;
@@ -196,6 +232,30 @@ html {
   display: none;
 }
 
+.nav-d {
+  display: none;
+}
+
+@media only screen and (min-width: 425px) {
+  .start .DHCQ {
+    font-size: 1rem;
+  }
+  nav li {
+    margin: 0 10px;
+  }
+  nav .log-in {
+    padding: 5px 20px 5px 20px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .start .DHCQ {
+    font-size: 1.25rem;
+  }
+  nav li {
+    margin: 0 20px;
+  }
+}
+/*Medium Devies*/
 @media only screen and (min-width: 1024px) {
   #drum-showcase {
     display: block;
@@ -203,14 +263,18 @@ html {
     height: 400px;
     mix-blend-mode: color-burn;
     transition: transform 7.5s;
-    margin-right: 6rem;
+    margin-right: 3rem;
   }
   /* Thêm hiệu ứng xoay khi hover */
   #drum-showcase:hover {
     transform: rotate(360deg);
+    overflow: hidden;
   }
-  .hero-container {
-    margin: 0 6rem 0 6rem;
+  .nav-m, .NEU-m {
+    display: none;
+  }
+  .header-container {
+    margin: 0 3rem 0 6rem;
   }
   .start .line-verti {
     display: block;
@@ -218,9 +282,6 @@ html {
   }
   .start .NEU-d {
     display: block;
-  }
-  .NEU-m {
-    display: none;
   }
   .uni-img-element {
     justify-content: left;
@@ -234,15 +295,22 @@ html {
   .body1-container, .body3-container {
     margin: 0 6em 0 6em;
   }
-  .body1-group2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .body1 {
+    margin-bottom: 12rem;
   }
   .body1-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+  }
+  .body1-group2 {
+    display: flex;
+    justify-content: right;
+  }
+  .body2 {
+    display: block;
+    background-color: #E7EDFA;
+    margin: 6em 0 6em 0;
   }
   .body2-container {
     display: flex;
@@ -305,14 +373,11 @@ html {
   #body3-group1, #body3-group3 {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
   }
   .body3-group3-right, .body3-group1-right {
     display: flex;
     justify-content: right;
-  }
-  .body3-group2-left {
-    display: flex;
-    justify-content: left;
   }
   .decor {
     display: block;
@@ -343,4 +408,35 @@ html {
   .white-NEU {
     width: 10rem;
   }
-}/*# sourceMappingURL=base.css.map */
+  .nav-d {
+    display: block;
+  }
+  .nav-d li {
+    margin-left: 30px;
+  }
+  .group-info {
+    font-size: 14px;
+  }
+  .body3-black-bodyinfo {
+    width: min(430px, 90%);
+  }
+}
+/* Large Devices*/
+@media only screen and (min-width: 1440px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  .header-container, .body1-container, .body3-container {
+    margin: 0 9rem 0 9rem;
+  }
+  .group-info {
+    font-size: 16px;
+  }
+  .body3-black-bodyinfo {
+    width: min(490px, 85%);
+  }
+  nav li {
+    margin: 0 35px;
+  }
+}/*# sourceMappingURL=index.css.map */
