@@ -1,0 +1,319 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --primary-color: #0065CA;
+    --white-color: #fff;
+    --text-color: #333;
+    --black-color: #000;
+    --yellow-color: #FEBD17;
+
+    --semibold-font: 600;
+    --regular-font: 400;
+    --extrabold-font: 800;
+    --medium-font: 500;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+}
+
+/* Header */
+.header {
+    background-color: var(--primary-color);
+
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.start {
+    margin-left: 3rem;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.start .logo {
+    height: 5em;
+    margin: 1.25em 0.25em 1.25em 0;
+}
+
+.start .line-verti {
+    display: none;
+}
+
+.start .uni-name {
+    line-height: 1.25em;
+    font-size: 1.5em;
+    font-weight: bolder;
+    color: #fff;
+    margin-left: 5px;
+}
+
+.start .NEU-m {
+    line-height: 2rem;
+    font-size: 2rem;
+    margin-bottom: 0.4rem;
+}
+
+.start .NEU-d {
+    display: none;
+}
+
+.start .DHCQ {
+    line-height: 1rem;
+    font-size: 1rem;
+    color: var(--yellow-color);
+}
+
+.end {
+    margin-right: 3rem;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin: 0 5px;
+} 
+
+.nav__icon {
+    display: flex;
+    align-items: center;
+}
+
+.nav__home {
+    margin: auto;
+}
+
+.nav__news {
+
+}
+
+.nav__noti {
+
+}
+
+.nav__person {
+
+}
+
+.ham {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: var(--white-color);
+}
+
+.nav__ham {
+    padding: 1.6rem 3rem;
+    font-size: 3.6rem;
+}
+
+/* Body */
+.hero {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero__head {
+    line-height: 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--black-color);
+}
+
+.hero__foot {
+    margin-bottom: 2.8rem;
+    line-height: 5rem;
+    font-size: 3.2rem;
+    font-weight: bold;
+    color: var(--yellow-color);
+}
+
+.freq-queries {
+    width: 100%;
+}
+
+.headline-div {
+    margin-left: 3rem;
+}
+
+.headline {
+    margin-left: 3rem;
+    display: flex;
+}
+
+.headline p {
+    margin-top: 1.2rem;
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    font-weight: bold;
+    color: var(--black-color);
+
+}
+
+.headline img {
+    margin-left: 1.6rem;
+}
+
+.arrow {
+    width: 100%;
+    height: 6.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow-icon {
+    font-size: 3.2rem;
+}
+
+.query-subpages {
+    border-top: 2px solid var(--black-color);
+    border-bottom: 2px solid var(--black-color);
+}
+
+.subpages-wrap {
+    padding: 2.8rem 3rem;
+}
+
+.subpages-wrap:nth-child(2) {
+    border-top: 2px solid var(--black-color);
+    border-bottom: 2px solid var(--black-color);
+}
+
+.subpage-headtext {
+    padding-bottom: 2rem;
+    font-size: 2rem;
+    line-height: 2rem;
+    font-weight: bold;
+}
+
+.subpage-descrip {
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    font-weight: var(--medium-font);
+}
+
+
+.spacing-img {
+    display: block;
+    margin: 1rem auto 5rem;
+}
+
+.freq-webs {
+
+}
+
+.websites {
+    border-top: 2px solid var(--black-color);
+    border-bottom: 2px solid var(--black-color);
+}
+
+.web-wrap {
+    padding: 2.8rem 2rem 2.8rem 3rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.web-wrap:nth-child(2) {
+    border-top: 2px solid var(--black-color);
+    border-bottom: 2px solid var(--black-color);
+}
+
+.web-wrap:nth-child(3) {
+    border-bottom: 2px solid var(--black-color);
+}
+
+.school-icon {
+    height: 6rem;
+}
+
+.text-wrap {
+    margin: 1.6rem;
+}
+
+.web-headtext {
+    margin-bottom: 0.8rem;
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: var(--black-color);
+}
+
+.web-descrip {
+    font-size: 1.6rem;
+    font-weight: var(--regular-font);
+    color: var(--black-color);
+}
+
+
+.schools {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-head {
+    font-size: 1.4rem;
+    font-weight: var(--medium-font);
+    color: var(--black-color);
+}
+
+.intro-foot {
+    line-height: 4rem;
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: var(--yellow-color);
+}
+
+.schools-wrap {
+    margin-bottom: 6rem;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.school-img-wrap {
+    display: flex;
+    align-items: center;
+    margin: 2rem;
+}
+
+.school-img {
+    margin: auto;
+}
+
+
+
+
