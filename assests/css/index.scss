@@ -233,6 +233,77 @@ nav{
 .nav-d{
     display:none;
 }
+
+.noti-box{
+    width: 50%;
+    position: absolute;
+    top: 60px;
+    right: 35px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.2);
+    background-color: var(--white-color);
+    border-radius: 5px; 
+}
+.top-noti{
+    border-bottom: 1px solid #bebebe;
+}
+.top-noti-container{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    margin: 1em;
+}
+.bot-noti-container{
+    height: 200px;
+}
+.noti-info{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    min-height:50px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #bebebe; 
+    
+}
+.ping-dot{
+    margin: 5px 10px 5px 10px;
+    height: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.noti-container{
+    display:flex;
+    flex-direction: column;
+    height: 50px;
+}
+.title-box,.extra-title-info{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.extra-title-info{
+    padding: 0 10px 0 10px;
+}
+.title{
+    width: 90%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media only screen and (min-width: 425px){
     .start{
         .DHCQ{
