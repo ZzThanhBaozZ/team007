@@ -1,0 +1,262 @@
+/* Medium and big screen device (740px and above) */
+@media (min-width: 46.25em) {
+    .ham,
+    .nav__home,
+    .nav__news,
+    .NEU-m {
+        display: none;
+    }
+
+    .NEU-d {
+        font-size: 1.6rem;
+        line-height: 2rem;
+    }
+
+    .start .DHCQ {
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+    }
+
+    .hero {
+        align-items: flex-start;
+    }
+
+    .line-verti {
+        display: block;
+        content: "";
+        background-color: var(--white-color);
+        height: 6rem;
+        width: 0.4rem;
+    }
+    
+    .end {
+        margin-right: 3rem;
+    }
+
+    .nav__icon p {
+        font-size: 1.6rem;
+        font-weight: var(--extrabold-font);
+        color: var(--white-color);
+    }
+
+    .nav__ham {
+        padding: 0;
+        color: var(--white-color);
+    }
+
+    .hero img {
+        margin: 7rem 0 1.2rem;
+    }
+    
+    .nav__icon {
+        padding: 1.2rem; 
+        margin: 0;
+    }
+
+    .headline-div,
+    .headline {
+        margin-left: 0;
+    }
+
+    /* Hover */
+    .start:hover,
+    .nav__icon:hover,
+    .subpages-wrap,
+    .web-wrap,
+    .school-img-wrap,
+    .schools-foot-text {
+        cursor: pointer;
+    }
+
+    .nav__icon p,
+    .nav__icon i {
+        position: relative;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .nav__icon:hover p,
+    .nav__icon:hover i {
+        color: var(--yellow-color);
+    }
+
+    .nav__icon p::before {
+        content: "";
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 0%;
+        height: 2px;
+        background-color: var(--yellow-color);
+        transition: all 0.5s ease-in-out;
+    }
+
+    .nav__icon:hover p::before {
+        width: 100%;
+    }
+
+}
+
+/* Medium screen devices (740px to 1023px) */
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+    .spacing-img-verti {
+        display: none;
+    }
+
+    .web-container {
+        margin: 0 3rem;
+    }
+
+    .hero {
+        margin-left: 3rem;
+    }
+
+    .hero__head {
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+
+    .hero__foot {
+        font-size: 2.8rem;
+        line-height: 3.2rem;
+    }
+}
+
+/* Medium screen devices (1024px and above)*/
+@media (min-width: 64em) {
+    .start {
+        margin-left: 5rem;
+    }
+
+    .end {
+        margin-right: 5rem;
+    }
+
+    .nav__icon {
+        padding: 2rem;
+    }
+
+    .nav__icon p {
+        font-size: 1.6rem;
+    }
+
+    .nav__icon img {
+        height: 3.8rem;
+    }
+
+    .web-container {
+        margin: 3rem 5rem;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .spacing-img {
+        display: none;
+    }
+
+    .spacing-img-verti {
+        align-self: center;
+        display: block;
+        margin: 0 5rem;
+    }
+
+    .freq-queries,
+    .freq-webs {
+        width: 45%;
+    }
+    
+    .subpages-wrap,
+    .web-wrap {
+        padding-left: 0;
+    }
+    
+    .hero {
+        margin-left: 5rem;
+    }
+    
+    .hero__head {
+        font-size: 2.4rem;
+        line-height: 2.8rem;
+    }
+
+    .hero__foot {
+        font-size: 3rem;
+        line-height: 3.6rem;
+    }  
+
+    .footer {
+        display: block;
+        margin-top: 3rem;
+        background-color: var(--primary-color);
+    }
+
+    .footer-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 6rem 0 6rem;
+        padding: 1.5rem 0 1.5rem 0;
+    }
+
+    .footer-info {
+        width: min(700px, 80%);
+        line-height: 1.75rem;
+        font-size: 1.4rem;
+        font-weight: 630;
+        color: var(--white-color);
+    }
+
+    .footer-white-NEU {
+        display: flex;
+    }
+
+    .white-NEU {
+        width: 10rem;
+    }
+}
+
+/* Big screen devices (1240px and above) */
+@media (min-width: 77.5em) {
+    .nav__icon {
+        padding: 2rem 3rem; 
+    }
+
+    .spacing-img-verti {
+        margin: 0 10rem;
+    }
+
+    .start {
+        margin-left: 10rem;
+    }
+
+    .end {
+        margin-right: 7rem;
+    }
+
+    .nav__icon p {
+        font-size: 1.8rem;
+    }
+
+    .nav__icon img {
+        height: 4rem;
+    }
+
+    .hero {
+        margin-left: 10rem;
+    }
+    
+    .web-container {
+        margin: 3rem 10rem;
+    }
+
+    .hero__head {
+        font-size: 2.8rem;
+        line-height: 2.8rem;
+    }
+
+    .hero__foot {
+        font-size: 3.6rem;
+        line-height: 4rem;
+    }  
+}

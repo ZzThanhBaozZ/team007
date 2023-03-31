@@ -50,10 +50,6 @@ html {
     margin: 1.25em 0.25em 1.25em 0;
 }
 
-.start .line-verti {
-    display: none;
-}
-
 .start .uni-name {
     line-height: 1.25em;
     font-size: 1.5em;
@@ -66,10 +62,6 @@ html {
     line-height: 2rem;
     font-size: 2rem;
     margin-bottom: 0.4rem;
-}
-
-.start .NEU-d {
-    display: none;
 }
 
 .start .DHCQ {
@@ -109,18 +101,6 @@ nav li {
     margin: auto;
 }
 
-.nav__news {
-
-}
-
-.nav__noti {
-
-}
-
-.nav__person {
-
-}
-
 .ham {
     width: 100%;
     display: flex;
@@ -136,7 +116,6 @@ nav li {
 
 /* Body */
 .hero {
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -156,10 +135,6 @@ nav li {
     font-size: 3.2rem;
     font-weight: bold;
     color: var(--yellow-color);
-}
-
-.freq-queries {
-    width: 100%;
 }
 
 .headline-div {
@@ -219,7 +194,7 @@ nav li {
 
 .subpage-descrip {
     font-size: 1.6rem;
-    line-height: 1.8rem;
+    line-height: 2rem;
     font-weight: var(--medium-font);
 }
 
@@ -227,10 +202,6 @@ nav li {
 .spacing-img {
     display: block;
     margin: 1rem auto 5rem;
-}
-
-.freq-webs {
-
 }
 
 .websites {
@@ -271,7 +242,8 @@ nav li {
 
 .web-descrip {
     font-size: 1.6rem;
-    font-weight: var(--regular-font);
+    line-height: 2rem;
+    font-weight: var(--medium-font);
     color: var(--black-color);
 }
 
@@ -283,7 +255,8 @@ nav li {
     align-items: center;
 }
 
-.intro-head {
+.intro-head,
+.schools-foot-text {
     font-size: 1.4rem;
     font-weight: var(--medium-font);
     color: var(--black-color);
@@ -297,7 +270,6 @@ nav li {
 }
 
 .schools-wrap {
-    margin-bottom: 6rem;
     width: 90%;
     display: flex;
     flex-wrap: wrap;
@@ -314,6 +286,23 @@ nav li {
     margin: auto;
 }
 
+.schools-foot-text {
+    padding: 1rem 2rem 2rem;
+    margin-bottom: 4rem;
+    text-decoration: underline;
+}
 
+/* Mobile max-width: 739px*/
+@media (max-width: 46.1875em) {
+    .nav__icon:last-child,
+    .nav__icon p,
+    .hero img,
+    .start .line-verti,
+    .start .NEU-d,
+    .spacing-img-verti,
+    .footer {
+        display: none;
+    }
+}
 
 
