@@ -202,6 +202,7 @@ nav li {
 .spacing-img {
     display: block;
     margin: 1rem auto 5rem;
+    width: 300px;
 }
 
 .websites {
@@ -305,4 +306,34 @@ nav li {
     }
 }
 
+/* For extremely small screen devices (595px and below) */
+@media only screen and (max-width: 390px) {
+    .DHCQ {
+        display: none;
+    }
+} 
+
+@media only screen and (max-width: 595px) {
+    .start {
+        margin-top: 1rem;
+    }
+
+    .end {
+        margin-right: 1rem;
+    }
+
+    .nav__ham {
+        padding: 1.6rem 2rem;
+    }
+    
+    .hero__head {
+        font-size: 1.6rem;
+        line-height: 1.6rem;
+    }
+
+    .hero__foot {
+        font-size: 2.4rem;
+        line-height: 3rem;
+    }
+}
 
