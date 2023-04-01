@@ -12,8 +12,8 @@
 
     <script src="https://kit.fontawesome.com/30d0976aea.js" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="./assests/css/login_main.css">
-    <link rel="stylesheet" href="./assests/css/login_res.css">
+    <link rel="stylesheet" href="../css/login_main.css">
+    <link rel="stylesheet" href="../css/login_res.css">
 
 </head>
 <body>
@@ -40,7 +40,7 @@
                         
                         <div class="recent-login__item-contain">
                         
-                                <img src="./img/user-avt.png" alt="" class="recent-login__item-avt">
+                                <img src="../img/user-avt.png" alt="" class="recent-login__item-avt">
                             
                                 <p class="recent-login__item-username">1121....</p>
                             
@@ -52,7 +52,7 @@
                         
                         <div class="recent-login__item-contain">
                             
-                                <img src="./img/user-avt.png" alt="" class="recent-login__item-avt">
+                                <img src="../img/user-avt.png" alt="" class="recent-login__item-avt">
                             
                                 <p class="recent-login__item-username">1121....</p>
                             
@@ -64,7 +64,7 @@
                         
                         <div class="recent-login__item-contain">
                             
-                                <img src="./img/user-avt.png" alt="" class="recent-login__item-avt">
+                                <img src="../img/user-avt.png" alt="" class="recent-login__item-avt">
                         
                                 <p class="recent-login__item-username">1121....</p>
                             
@@ -84,12 +84,12 @@
             <p class="login-mobile-text">Đăng nhập tài khoản khác</p>
             
             <div class="login">
-                <img src="./img/logo.svg" alt="" class="second-wrapper-img">
+                <img src="../img/logo.svg" alt="" class="second-wrapper-img">
                 <div class="login-text">
                     <p class="login-text__head">TRƯỜNG ĐẠI HỌC</p>
                     <p class="login-text__body">KINH TẾ QUỐC DÂN</p>
                     <p class="login-text__foot">cổng thông tin đào tạo</p>
-                    <img src="./img/div-line.svg" alt="" class="login-text__div">
+                    <img src="../img/div-line.svg" alt="" class="login-text__div">
                 </div>
     
                 <form action="" class="login-input">
@@ -109,14 +109,14 @@
                                 
                             </div>
                         </div>
-                        <a href="#" class="login-input__pass-forgot">Quên mật khẩu?</a>
+                        <a onclick="window.open('https://password.neu.edu.vn/ResetPassword', '_blank')" href="#" class="login-input__pass-forgot">Quên mật khẩu?</a>
                     </div>
                     <button type="submit" class="login-input__btn">Đăng nhập</button>
                 
                     <button type="submit" class="login-form__office-btn">
                         
                             <div class="login-form__office-img">
-                                <img src="./img/office-logo.png" alt="">
+                                <img src="../img/office-logo.png" alt="">
                             </div>
                             <p>Đăng nhập với Email sinh viên</p>
                         
@@ -125,7 +125,7 @@
                     <button type="submit" class="login-form__office-btn">
                         
                             <div class="login-form__office-img">
-                                <img src="./img/office-logo.png" alt="">
+                                <img src="../img/office-logo.png" alt="">
                             </div>
                             <p>Đăng nhập với Email giảng viên</p>
                         
@@ -134,43 +134,7 @@
             </div>
         </div>
     </div>
+
+    <script src="../javascripts/login.js"></script>
 </body>
-
-<script>
-    const togglePassword = document.querySelector("#togglePassword");
-    const password = document.querySelector("#password");
-
-    togglePassword.addEventListener("click", function () {
-        // toggle the type attribute
-        const type = password.getAttribute("type") === "password" ? "text" : "password";
-        password.setAttribute("type", type);
-        
-        // toggle the icon
-        this.classList.toggle("fa-eye");
-    });
-
-    const removeButtons = document.querySelectorAll('.recent-login__item-remove');
-
-    removeButtons.forEach(button => {
-      button.addEventListener('click', () => {
-        
-        const parent = button.parentNode;
-        
-        parent.style.opacity = 0;
-        parent.style.transition = 'opacity 0.2s ease-in-out';
-
-        setTimeout(() => {
-          parent.remove();
-
-          const nextSibling = parent.nextElementSibling;
-          if (nextSibling) {
-            nextSibling.style.animation = 'slide 0.5s ease-in forwards';
-          }
-        }, 500);
-      });
-    });
-    
-
-</script>
-
 </html>

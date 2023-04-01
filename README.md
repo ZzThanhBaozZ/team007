@@ -19,3 +19,5 @@ Default set {
 Icon package {
     Font Awesome: https://fontawesome.com/search?o=r&m=free
 }
+
+Fighting everyone and myself ;(
