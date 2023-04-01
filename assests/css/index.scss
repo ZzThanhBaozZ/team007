@@ -57,7 +57,7 @@ html {
         display: none;
     }
     .DHCQ{
-        font-size: 0.75rem;
+        font-size: 0.9rem;
         color: var(--yellow-color);
     }
 }
@@ -85,6 +85,7 @@ nav{
         height: 30px;
     }
     .log-in{
+        text-align: center;
         background-color: var(--white-color);
         border-radius: 20px;
         padding: 5px 15px 5px 15px;
@@ -98,6 +99,7 @@ nav{
 
 #drum-showcase{
     display: none;
+    user-select: none;
 }
 
 /*Phần thân*/
@@ -132,6 +134,8 @@ nav{
 .body1-info2{
     font-size: 1em;
     font-weight: 800;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 .body1-info3{
@@ -198,6 +202,10 @@ nav{
     font-size: 1.5rem;
     line-height: 1rem;
     font-weight: bolder;
+    a{
+        text-decoration: none;
+        color: black;
+    }
 }
 
 .line-hori{
@@ -230,15 +238,13 @@ nav{
     display:none;
 }
 
-.nav-d{
-    display:none;
-}
-
 .noti-box{
-    width: 50%;
+    width: 70%;
+    display: none;
     position: absolute;
-    top: 60px;
-    right: 35px;
+    z-index: 1;
+    top: 65px;
+    right: 30px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.2);
     background-color: var(--white-color);
     border-radius: 5px; 
@@ -253,8 +259,19 @@ nav{
     font-size: 12px;
     margin: 1em;
 }
-.bot-noti-container{
-    height: 200px;
+
+
+
+
+.noti-l{
+    font-size: 1em;
+}
+.mid-noti{
+    font-size: 12px;
+}
+.mid-noti-container{
+    max-height: 273px;
+    overflow: hidden;
 }
 .noti-info{
     display:flex;
@@ -263,8 +280,8 @@ nav{
     justify-content: left;
     align-items: center;
     min-height:50px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 7px;
+    margin-bottom: 7px;
     border-bottom: 1px solid #bebebe; 
     
 }
@@ -278,7 +295,9 @@ nav{
 .noti-container{
     display:flex;
     flex-direction: column;
-    height: 50px;
+    height: 20%;
+    width: max(100px,85%);
+    margin: 1rem 0 1rem 0;
 }
 .title-box,.extra-title-info{
     display:flex;
@@ -286,15 +305,83 @@ nav{
     justify-content: space-between;
 }
 .extra-title-info{
-    padding: 0 10px 0 10px;
+    padding: 0 5% 0 5%;
 }
 .title{
-    width: 90%;
+    width: 85%;
+}
+.noti-container-info{
+    font-size: 10px;
+}
+.title,.extra-title-info{
+    font-size: 1em;
+    margin: 0.1em 0 0.1em 0;
+}
+
+.bot-noti{
+    margin: 1rem 0 1rem 0;
+}
+.toggle-expand-noti{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: underline;
+    font-size: 12px;
+}
+.toggle-expand-noti-typo{
+    font-size: 1em;
+    user-select: none;
+    font-weight: normal;
+    color: blue;
 }
 
 
 
 
+
+
+
+
+
+.body3-yellow-headinfo:hover,
+.body1-info3:hover{
+    background-image: linear-gradient(to right, #febd17, #f12711);
+    background-size: 400% 400%;
+    animation: gradient 1s ease-in-out;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.body3-black-bodyinfo:hover,
+.body3-black-footinfo:hover,
+.body1-info1:hover,
+.body1-info2:hover,
+.body1-info4:hover{
+    background-image: linear-gradient(to right, #0065CA, #9CECFB);
+    background-size: 150% 150%;
+    animation: gradient 1s ease-in-out;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.see-more a:hover{
+    color: #FEBD17;
+    font-size: 2rem;
+    transition: 0.2s ease;
+}
+@keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+#log-in-d,#news-d{
+    display: none;
+}
 
 
 
@@ -318,6 +405,16 @@ nav{
             padding: 5px 20px 5px 20px;
         }
     }
+    .top-noti-container{
+        font-size: 14px;
+    }
+    .noti-container-info{
+        font-size: 12px;
+        width: max(250px, 107%);
+    }
+    .title,.extra-title-info{
+        margin: 0.2em 0 0.2em 0;
+    }
 }
 @media only screen and (min-width: 768px){
     .start{
@@ -330,13 +427,26 @@ nav{
             margin: 0 20px;
         }
     }
+    .top-noti-container{
+        font-size: 16px;
+    }
+    .noti-container-info{
+        font-size: 14px;
+        width: 110%;
+    }
+    .title,.extra-title-info{
+        margin: 0.4em 0 0.4em 0;
+    }
+    .mid-noti-container{
+        max-height: 280px;
+    }
 }
 /*Medium Devies*/
 @media only screen and (min-width: 1024px){
     #drum-showcase {
         display:block;
-        width: 400px;
-        height: 400px;
+        width: 500px;
+        height: 500px;
         mix-blend-mode: color-burn;
         transition: transform 7.5s;
         margin-right: 3rem;
@@ -347,7 +457,33 @@ nav{
         transform: rotate(360deg);
         overflow: hidden;
       }
-    .nav-m,.NEU-m{
+    .body1-info{
+        font-size: 3.5rem;
+        line-height: 3.5rem;
+    }
+    #log-in-d,#news-d{
+        display:block;
+    }  
+    #log-in-m{
+        display:none;
+    }
+    .noti-box{
+        width: 40%;
+    }
+    .toggle-expand-noti{
+        font-size: 16px;
+    }
+    .mid-noti-container{
+        max-height: 380px;
+    }
+    .top-noti-container{
+        font-size: 20px;
+    }
+    .noti-container-info{
+        font-size: 16px;
+        width: 110%;
+    }  
+    .NEU-m{
         display:none;
     }
     .header-container{
@@ -363,9 +499,14 @@ nav{
         }
     }
     .uni-img-element{
-        justify-content: left;
-        margin: 4rem 0 4rem 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 8rem 0 1rem 0;
 
+    }
+    .uni-img{
+        width: 400px;
     }
 
     .body2{
@@ -379,7 +520,7 @@ nav{
     }
 
     .body1{
-        margin-bottom: 12rem;
+        margin-bottom: 3rem;
       }
 
     .body1-container{
@@ -514,17 +655,28 @@ nav{
         width:10rem;
     }
 
-    .nav-d{
-        display:block;
-        li{
-            margin-left: 30px;
-        }
-    }
     .group-info{
         font-size: 14px;
     }
     .body3-black-bodyinfo{
         width: min(430px, 90%);
+    }
+    .body1-group2-container{
+        width:600px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    nav{
+        li{
+            margin: 0 30px;
+        }
+        .noti {
+            height: 35px;
+        }
+    }
+    .a1{
+        font-size: 1.5rem;
     }
 }
 /* Large Devices*/
@@ -547,7 +699,7 @@ nav{
     }
     nav{
         li{
-            margin: 0 35px;
+            margin: 0 40px;
         }
     }
 }
