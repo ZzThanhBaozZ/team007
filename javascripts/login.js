@@ -10,7 +10,7 @@ togglePassword.addEventListener("click", function () {
     this.classList.toggle("fa-eye");
 });
 
-// Open home 
+// Open homepage 
 function openHome() {
   window.location.href = "../html/home.html";
 }
@@ -35,4 +35,18 @@ removeButtons.forEach(button => {
         }
     }, 500);
     });
+});
+
+
+// Check conditions input values 
+const usernameInput = document.getElementById('username');
+const loginButton = document.getElementById('login-button');
+
+loginButton.addEventListener('click', () => {
+    const username = usernameInput.value;
+    if (username.length == 8) {
+        openHome();
+    } else {
+        alert('Username must contain 8 numbers');
+    }
 });
