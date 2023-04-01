@@ -12,6 +12,7 @@
 
     <script src="https://kit.fontawesome.com/30d0976aea.js" crossorigin="anonymous"></script>
 
+    <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/login_main.css">
     <link rel="stylesheet" href="../css/login_res.css">
 
@@ -38,7 +39,7 @@
                 <div class="recent-login__list">
                     <div class="recent-login__item">
                         
-                        <div class="recent-login__item-contain">
+                        <div onclick="openHome()" class="recent-login__item-contain">
                         
                                 <img src="../img/user-avt.png" alt="" class="recent-login__item-avt">
                             
@@ -50,7 +51,7 @@
                     
                     <div class="recent-login__item">
                         
-                        <div class="recent-login__item-contain">
+                        <div onclick="openHome()" class="recent-login__item-contain">
                             
                                 <img src="../img/user-avt.png" alt="" class="recent-login__item-avt">
                             
@@ -62,7 +63,7 @@
     
                     <div class="recent-login__item">
                         
-                        <div class="recent-login__item-contain">
+                        <div onclick="openHome()" class="recent-login__item-contain">
                             
                                 <img src="../img/user-avt.png" alt="" class="recent-login__item-avt">
                         
@@ -92,45 +93,43 @@
                     <img src="../img/div-line.svg" alt="" class="login-text__div">
                 </div>
     
-                <form action="" class="login-input">
-                    <div class="login-input__user">
-                        <p class="login-input__text-user">Tên đăng nhập</p>
-                        <input type="text" name="username" class="login-input__user-form" required>
-                    </div>
-                    
-                    <div class="login-input__pass">
-                        <div>
-                            <p class="login-input__text-pass">Mật khẩu</p>
-                            <div class="login-input__pass-field">
-                                <input type="password" name="password" class="login-input__user-form" required id="password">
-                                <div class="login-input__pass-wrap">
-                                    <i class="login-input__pass-field-icon fa-solid fa-eye-slash" id="togglePassword"></i>
-                                </div>
-                                
-                            </div>
+                <div class="login-input">
+                    <form action="">
+                        <div class="login-input__user">
+                            <p class="login-input__text-user">Tên đăng nhập</p>
+                            <input type="text" name="username" class="login-input__user-form" required>
                         </div>
-                        <a onclick="window.open('https://password.neu.edu.vn/ResetPassword', '_blank')" href="#" class="login-input__pass-forgot">Quên mật khẩu?</a>
-                    </div>
-                    <button type="submit" class="login-input__btn">Đăng nhập</button>
-                
-                    <button type="submit" class="login-form__office-btn">
                         
-                            <div class="login-form__office-img">
-                                <img src="../img/office-logo.png" alt="">
+                        <div class="login-input__pass">
+                            <div>
+                                <p class="login-input__text-pass">Mật khẩu</p>
+                                <div class="login-input__pass-field">
+                                    <input type="password" name="password" class="login-input__user-form" required id="password">
+                                    <div class="login-input__pass-wrap">
+                                        <i class="login-input__pass-field-icon fa-solid fa-eye-slash" id="togglePassword"></i>
+                                    </div>
+                                    
+                                </div>
                             </div>
-                            <p>Đăng nhập với Email sinh viên</p>
-                        
+                            <a onclick="window.open('https://password.neu.edu.vn/ResetPassword', '_blank')" href="#" class="login-input__pass-forgot">Quên mật khẩu?</a>
+                        </div>
+                        <button type="submit" class="login-input__btn">Đăng nhập</button>  
+                    </form>
+
+                    <button onclick="openHome()" type="submit" class="login-form__office-btn"> 
+                        <div class="login-form__office-img">
+                            <img src="../img/office-logo.png" alt="">
+                        </div>
+                        <p>Đăng nhập với Email sinh viên</p>
                     </button>
-    
-                    <button type="submit" class="login-form__office-btn">
-                        
-                            <div class="login-form__office-img">
-                                <img src="../img/office-logo.png" alt="">
-                            </div>
-                            <p>Đăng nhập với Email giảng viên</p>
-                        
+
+                    <button onclick="openHome()" type="submit" class="login-form__office-btn">
+                        <div class="login-form__office-img">
+                            <img src="../img/office-logo.png" alt="">
+                        </div>
+                        <p>Đăng nhập với Email giảng viên</p>
                     </button>
-                </form>
+                </div>
             </div>
         </div>
     </div>

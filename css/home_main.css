@@ -1,29 +1,3 @@
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-
-:root {
-    --primary-color: #0065CA;
-    --white-color: #fff;
-    --text-color: #333;
-    --black-color: #000;
-    --yellow-color: #FEBD17;
-
-    --semibold-font: 600;
-    --regular-font: 400;
-    --extrabold-font: 800;
-    --medium-font: 500;
-}
-
-html {
-    font-size: 62.5%;
-    line-height: 1.6rem;
-    font-family: "Montserrat", sans-serif;
-    box-sizing: border-box;
-}
-
 /* Header */
 .header {
     background-color: var(--primary-color);

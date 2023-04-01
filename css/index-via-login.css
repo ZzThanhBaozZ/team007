@@ -1,13 +1,9 @@
-:root {
-    --primary-color: #0065CA;
-    --white-color: #fff;
-    --text-color: #333;
-    --black-color: #000;
-    --yellow-color: #FEBD17;
-}
 html {
     overflow-x: hidden;
 }
+/* body {
+  overflow: overlay;
+} */
 .start{
     margin-left:0;
 }

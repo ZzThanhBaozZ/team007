@@ -302,4 +302,18 @@
     .second-wrapper {
         height: 70rem;
     }
+
+    html, body {
+        height: 88%;
+    }
+    
+    html {
+        display: table;
+        margin: auto;
+    }
+    
+    body {
+        display: table-cell;
+        vertical-align: middle;
+    }
 }

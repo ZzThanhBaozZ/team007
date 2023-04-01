@@ -10,6 +10,11 @@ togglePassword.addEventListener("click", function () {
     this.classList.toggle("fa-eye");
 });
 
+// Open home 
+function openHome() {
+  window.location.href = "../html/home.html";
+}
+
 // Remove a Recent login item 
 const removeButtons = document.querySelectorAll('.recent-login__item-remove');
 
