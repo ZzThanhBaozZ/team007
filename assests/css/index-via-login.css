@@ -1,0 +1,61 @@
+:root {
+    --primary-color: #0065CA;
+    --white-color: #fff;
+    --text-color: #333;
+    --black-color: #000;
+    --yellow-color: #FEBD17;
+}
+html {
+    overflow-x: hidden;
+}
+.start{
+    margin-left:0;
+}
+.end {
+    margin-right: 0;
+}
+.hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  
+  .hamburger-line {
+    width: 30px;
+    height: 3px;
+    margin: 5px;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .hamburger-menu.active .hamburger-line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  
+  .hamburger-menu.active .hamburger-line:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger-menu.active .hamburger-line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+  
+  .menu-content {
+    z-index: 1;
+    position: absolute;
+    top: 80px;
+    right: -20%;
+    width: 20%;
+    height: 100%;
+    background-color: var(--primary-color);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.2);
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+  }
+  
+  .menu-content.active {
+    right: 0;
+  }
+  

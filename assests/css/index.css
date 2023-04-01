@@ -354,7 +354,7 @@ nav .log-in-entry {
 .body3-yellow-headinfo:hover,
 .body1-info3:hover {
   background-image: linear-gradient(to right, #febd17, #f12711);
-  background-size: 400% 400%;
+  background-size: 150% 150%;
   animation: gradient 1s ease-in-out;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
