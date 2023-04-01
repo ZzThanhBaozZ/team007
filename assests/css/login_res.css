@@ -161,7 +161,7 @@
         position: absolute;
         left: 50%;
         transform: translate(-50%, -5%);
-        top: -2rem;
+        top: -5rem;
         width: 10rem;
         z-index: 1;
     }
@@ -294,5 +294,12 @@
 @media (min-width: 46.25em) and (max-width: 63.9375em) {
     .body-container {
         width: 95%;
+    }
+}
+
+/* Medium screen devices (740px and above) */
+@media (min-width: 46.25em) {
+    .second-wrapper {
+        height: 70rem;
     }
 }

@@ -36,6 +36,15 @@ body {
     }
   }
 
+  @keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
 /* <----- First wrapper ----->*/
 .first-wrapper {
     margin: 2.8rem 1.6rem;

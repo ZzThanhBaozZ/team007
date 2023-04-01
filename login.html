@@ -82,9 +82,9 @@
     
         <div class="second-wrapper">
             <p class="login-mobile-text">Đăng nhập tài khoản khác</p>
-            <img src="./img/logo.svg" alt="" class="second-wrapper-img">
+            
             <div class="login">
-                
+                <img src="./img/logo.svg" alt="" class="second-wrapper-img">
                 <div class="login-text">
                     <p class="login-text__head">TRƯỜNG ĐẠI HỌC</p>
                     <p class="login-text__body">KINH TẾ QUỐC DÂN</p>
@@ -148,6 +148,29 @@
         // toggle the icon
         this.classList.toggle("fa-eye");
     });
+
+    const removeButtons = document.querySelectorAll('.recent-login__item-remove');
+
+    removeButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        
+        const parent = button.parentNode;
+        
+        parent.style.opacity = 0;
+        parent.style.transition = 'opacity 0.2s ease-in-out';
+
+        setTimeout(() => {
+          parent.remove();
+
+          const nextSibling = parent.nextElementSibling;
+          if (nextSibling) {
+            nextSibling.style.animation = 'slide 0.5s ease-in forwards';
+          }
+        }, 500);
+      });
+    });
+    
+
 </script>
 
 </html>
