@@ -1,3 +1,230 @@
+/* <----- First wrapper ----->*/
+.first-wrapper {
+    margin: 2.8rem 1.6rem;
+}
+
+/* Login introduction */
+
+/* Recent login */
+.recent-login__text-head-mobile,
+.login-mobile-text {
+    font-size: 1.8rem;
+    font-weight: var(--semibold-font);
+    margin-bottom: 0.8rem;
+}
+
+.recent-login__list {
+    border-radius: 5px;
+    border: 1px solid var(--primary-color);
+}
+
+.recent-login__item {
+    height: 5.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.recent-login__item-contain {
+    display: flex;
+    align-items: center;
+}
+
+.recent-login__list > .recent-login__item:nth-of-type(2) {
+    border-top: 1px solid var(--primary-color);
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.recent-login__item-remove {
+    font-size: 2rem;
+    color: #444444;
+    order: 3;
+    margin-right: 1.6rem;
+}
+
+.recent-login__item-avt {
+    margin: 0 1.6rem;
+    width: 3.2rem;
+    border-radius: 50%;
+}
+
+.recent-login__item-username {
+    font-size: 1.6rem;
+    font-weight: var(--regular-font);
+}
+
+/* <----- Second wrapper ----->*/
+.second-wrapper {
+    margin: 2.8rem 1.6rem; 
+}
+
+/* Login text*/
+.login {
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-text {
+    text-align: center;
+}
+
+.login-text__foot {
+    font-size: 1.2rem;
+    font-weight: var(--extrabold-font);
+    color: var(--yellow-color);
+}
+
+.login-text__div {
+    width: 20rem;
+}
+
+/* Login Form */
+.login-input {
+    padding: 0 1.6rem 4rem;
+    width: calc(100% - 3.2rem);
+}
+
+.login-input__text-user,
+.login-input__text-pass {
+    font-size: 1.6rem;
+    font-weight: var(--semibold-font);
+    margin: 0.8rem 0;
+    color: var(--white-color);
+}
+
+.login-input__text-pass {
+    margin-top: 2.4rem;
+}
+
+input, button {
+    box-sizing: border-box;
+    padding: 1.6rem;
+    border: 0;
+    height: 5.4rem;
+    width: 100%;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.login-input__user-form {
+    font-size: 1.6em;
+    font-weight: var(--medium-font);
+    color: var(--white-color);
+    font-weight: 500;
+    background-color: #3384D5;
+    border: 1px solid var(--white-color);
+}
+
+.login-input__user-form:focus {
+    outline: none;
+    border: 1px solid var(--yellow-color);
+}
+
+.login-input__pass-field {
+    position: relative;
+}
+
+.login-input__pass-wrap {
+    display: block;
+    content: "";
+    width: 2rem;
+    height: 1.6rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 1.6rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+.login-input__pass-field-icon {
+    font-size: 1.6rem;
+    color: var(--white-color);  
+    text-align: center; 
+    line-height: 1.6rem;
+}
+
+.login-input__pass-forgot {
+    margin: 0.8rem 0 0;
+    font-size: 1.2rem;
+    color: var(--white-color);
+    float: right;
+    font-style: italic;
+    font-weight: var(--medium-font);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+button {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.login-input__btn {
+    background-color: var(--white-color);
+    color: var(--primary-color);
+}
+
+.login-form__office-btn {
+    margin: 0.8rem 0;
+    padding: 0;
+    background-color: #DE3C00;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid var(--white-color);
+    overflow: hidden;
+}
+
+.login-form__office-img {
+    background-color: var(--white-color);
+    height: inherit;
+    aspect-ratio : 1 / 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-form__office-btn p {
+    display: block;
+    margin: auto 0.8rem;
+    width: calc(100% - 5.4rem);
+    font-size: 1.6rem;
+    color: var(--white-color);
+    text-align: center;
+    font-weight: 600;
+}
+
+/* Mobile max-width: 739px*/
+@media (max-width: 46.1875em) {
+    .intro__text, 
+    .recent-login__text-body, 
+    .recent-login__item-add, 
+    .second-wrapper-img, 
+    .login-text__head,
+    .login-text__body,
+    .recent-login__text-head {
+        display: none;
+    }
+
+    .login-text__foot {
+        margin: 1.6rem 0 0;
+    }
+
+    input, button {
+        border-radius: 5px;
+    }
+
+    .login-input__btn {
+        margin: 2.4rem 0 3.2rem;
+    }
+}
+
 /* Big screen devices (1240px and above) */
 @media (min-width: 46.25em) {
     .body-container {

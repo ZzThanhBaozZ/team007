@@ -16,6 +16,10 @@
   justify-content: center;
   align-items: center;
 }
+.start:hover,
+.navi li {
+  cursor: pointer;
+}
 .start .logo {
   height: 5em;
   margin: 1.25em 0.25em 1.25em 0;
@@ -76,7 +80,6 @@ nav .log-in-entry {
   font-weight: 800;
   color: #000;
 }
-
 #drum-showcase {
   display: none;
   -webkit-user-select: none;

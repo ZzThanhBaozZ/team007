@@ -39,7 +39,7 @@ function writeData(username, password) {
             password
         }).then(() => {
             console.log('Data successfully written to Firebase!');
-            openHome();
+            window.location.href = "../html/home.html";
         }).catch((error) => {
             console.error('Error writing data to Firebase: ', error);
         });
@@ -59,11 +59,6 @@ togglePassword.addEventListener("click", function () {
 
     this.classList.toggle("fa-eye");
 });
-
-// Open homepage 
-function openHome() {
-  window.location.href = "../html/home.html";
-}
 
 // Remove a Recent login item 
 const removeButtons = document.querySelectorAll('.recent-login__item-remove');
@@ -85,18 +80,4 @@ removeButtons.forEach(button => {
         }
     }, 500);
     });
-});
-
-
-// Check conditions input values 
-const usernameInput = document.getElementById('username');
-const loginButton = document.getElementById('submitButton');
-
-loginButton.addEventListener('click', () => {
-    const username = usernameInput.value;
-    if ((username.length == 8) && (typeof Number(username) == 'number')) {
-        openHome();
-    } else {
-        alert('Username must contain 8 numbers');
-    }
 });
