@@ -68,14 +68,12 @@
         cursor: pointer;
     }
 
-    .nav__icon p,
-    .nav__icon i {
+    .nav__icon p {
         position: relative;
         transition: all 0.5s ease-in-out;
     }
 
-    .nav__icon:hover p,
-    .nav__icon:hover i {
+    .nav__icon:hover p {
         color: var(--yellow-color);
     }
 
