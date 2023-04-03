@@ -1,3 +1,27 @@
+:root {
+    --primary-color: #0065CA;
+    --white-color: #fff;
+    --text-color: #333;
+    --black-color: #000;
+    --yellow-color: #FEBD17;
+
+    --semibold-font: 600;
+    --regular-font: 400;
+    --extrabold-font: 800;
+    --medium-font: 500;
+  }
+  
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+  
+body {
+    margin: 0;
+}
+
 /* <----- First wrapper ----->*/
 .first-wrapper {
     margin: 2.8rem 1.6rem;
@@ -176,7 +200,6 @@ button {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
     border: 1px solid var(--white-color);
     overflow: hidden;
 }
@@ -184,7 +207,8 @@ button {
 .login-form__office-img {
     background-color: var(--white-color);
     height: inherit;
-    aspect-ratio : 1 / 1;
+    aspect-ratio: 1 / 1;
+    justify-self: flex-start;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -193,7 +217,7 @@ button {
 .login-form__office-btn p {
     display: block;
     margin: auto 0.8rem;
-    width: calc(100% - 5.4rem);
+    width: calc(100% - 5rem);
     font-size: 1.6rem;
     color: var(--white-color);
     text-align: center;
