@@ -75,6 +75,7 @@ nav li {
     position: relative;  
 }
 
+/* Personal list  */
 .nav__icon-person:hover .per-list {
     display: block;
 }
@@ -90,6 +91,7 @@ nav li {
     padding: 0.4rem 0;
     border-radius: 5px;
     display: none;
+    z-index: 5;
 }
 
 
@@ -303,6 +305,89 @@ nav li {
     text-decoration: underline;
 }
 
+/* Noti box */
+.nav__icon-noti:hover + .nav-noti-box,
+.nav-noti-box:hover {
+    display: block!important;
+}
+
+.nav-noti-box {
+    position: absolute;
+    content: "";
+    background-color: var(--white-color);
+    width: 35rem;
+    top: calc(9% + 1rem);;
+    right: 4%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.2);
+    padding: 0;
+    border-radius: 5px;
+    z-index: 5;
+    display: none;
+}
+
+.noti-box-header {
+    padding: 0 1.2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1.6rem;
+    color: var(--black-color);
+    font-weight: var(--medium-font);
+    line-height: 5rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.nav-noti-box ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-noti-box-item {
+    margin: 0;
+}
+
+.noti-wrap {
+    min-height: 8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.dot {
+    margin: 0.4rem;
+}
+
+.noti-value-head {
+    font-size: 1.4rem;
+    font-weight: var(--medium-font);
+}
+
+.noti-foot {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 0.8rem;
+    font-size: 1.2rem;
+}
+
+.setting {
+    margin: 1.2rem;
+    align-self: flex-start;
+}
+
+.noti-box-footer {
+    padding: 0 1.2rem;
+    font-size: 1.4rem;
+    font-weight: var(--medium-font);
+    text-decoration: underline;
+    color: var(--primary-color);
+    line-height: 5rem;
+    display: flex;
+    justify-content: center;
+}
+
 /* Mobile max-width: 739px*/
 @media (max-width: 46.1875em) {
     .nav__icon:last-child,
@@ -324,14 +409,6 @@ nav li {
 } 
 
 @media only screen and (max-width: 595px) {
-    .start {
-        margin-left: 1rem;
-    }
-
-    .end {
-        margin-right: 1rem;
-    }
-
     .nav__ham {
         padding: 1.6rem 2rem;
     }
@@ -456,6 +533,11 @@ nav li {
         width: 100%;
     }
 
+    .nav-noti-box-item:hover,
+    .per-list-item:hover {
+        background-color: #eeeeee;
+        cursor: pointer;
+    }
 }
 
 /* Medium screen devices (740px to 1023px) */
@@ -576,6 +658,31 @@ nav li {
     .white-NEU {
         width: 10rem;
     }
+
+    /* Noti box responsive */
+    .nav-noti-box {
+        width: 45rem;
+    }
+    
+    .noti-box-header {
+        font-size: 1.8rem;
+    }
+    
+    .noti-wrap {
+        min-height: 10rem;
+    }
+    
+    .dot {
+        margin: 0.8rem;
+    }
+    
+    .noti-value-head {
+        font-size: 1.6rem;
+    }
+    
+    .noti-foot {
+        font-size: 1.4rem;
+    }   
 }
 
 /* Big screen devices (1240px and above) */

@@ -32,8 +32,12 @@ submitButton.addEventListener('click', (e) => {
 
 // Only write data when they meet conditions
 function writeData(username, password) {
-    if ((username.length == 8) && (typeof Number(username) == 'number')) {
-            const userRef = push(usersRef); // create a unique key for each user
+    if((username.length != 8) || (isNaN(Number(username)))) {
+        alert('Username must contain 8-digit number');
+    } else if (password.length === 0) {
+        alert("Password can't be empty")
+    } else {
+        const userRef = push(usersRef); // create a unique key for each user
             set(userRef, {
             username,
             password
@@ -43,8 +47,6 @@ function writeData(username, password) {
         }).catch((error) => {
             console.error('Error writing data to Firebase: ', error);
         });
-    } else {
-        alert('Username must contain 8 numbers');
     }
 }
 
@@ -61,23 +63,24 @@ togglePassword.addEventListener("click", function () {
 });
 
 // Remove a Recent login item 
-const removeButtons = document.querySelectorAll('.recent-login__item-remove');
+// const removeButtons = document.querySelectorAll('.recent-login__item-remove');
 
-removeButtons.forEach(button => {
-    button.addEventListener('click', () => {
+// removeButtons.forEach(button => {
+//     button.addEventListener('click', () => {
     
-    const parent = button.parentNode;
+//     const parent = button.parentNode;
     
-    parent.style.opacity = 0;
-    parent.style.transition = 'opacity 0.2s ease-in-out';
+//     parent.style.opacity = 0;
+//     parent.style.transition = 'opacity 0.2s ease-in-out';
 
-    setTimeout(() => {
-        parent.remove();
+//     setTimeout(() => {
+//         parent.remove();
 
-        const nextSibling = parent.nextElementSibling;
-        if (nextSibling) {
-        nextSibling.style.animation = 'slide 0.5s ease-in forwards';
-        }
-    }, 500);
-    });
-});
+//         const nextSibling = parent.nextElementSibling;
+//         if (nextSibling) {
+//         nextSibling.style.animation = 'slide 0.5s ease-in forwards';
+//         }
+//     }, 500);
+//     });
+// });
+ 
