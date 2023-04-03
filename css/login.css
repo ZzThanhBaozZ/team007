@@ -109,7 +109,7 @@ body {
 /* Login Form */
 .login-input {
     padding: 0 1.6rem 4rem;
-    width: calc(100% - 3.2rem);
+    width: 100%;
 }
 
 .login-input__text-user,

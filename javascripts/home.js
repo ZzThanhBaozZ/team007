@@ -21,3 +21,16 @@ window.addEventListener('load', () => {
 window.addEventListener('resize', () => {
     updateHeights();
 });
+
+
+var box = document.getElementById('box');
+var isHidden = true;
+function toggleNoti(){
+    if (isHidden) {
+        box.style.display = 'block'; // Đặt giá trị của thuộc tính display thành 'block' để hiển thị phần tử
+        isHidden = false;
+    } else {
+        box.style.display = 'none'; // Đặt giá trị của thuộc tính display thành 'none' để ẩn phần tử
+        isHidden = true;
+    }
+}
