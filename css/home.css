@@ -567,6 +567,10 @@ nav li {
 
 /* Medium screen devices (1024px and above)*/
 @media (min-width: 64em) {
+    .header-container {
+        margin: 0 3rem 0 6rem;
+    }
+
     .start {
         margin-left: 5rem;
     }
