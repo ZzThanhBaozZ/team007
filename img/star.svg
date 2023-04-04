@@ -1,10 +1,10 @@
-<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<mask id="mask0_380_527" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="60" height="60">
-<rect width="60" height="60" fill="url(#pattern0)"/>
+<svg width="1000" height="1000" viewBox="0 0 1000 1000" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<mask id="mask0_380_527" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="1000" height="1000">
+<rect width="1000" height="1000" fill="url(#pattern0)"/>
 </mask>
 <g mask="url(#mask0_380_527)">
-<rect width="60" height="60" fill="url(#pattern1)"/>
-<rect width="60" height="60" fill="url(#paint0_linear_380_527)"/>
+<rect width="1000" height="1000" fill="url(#pattern1)"/>
+<rect width="1000" height="1000" fill="url(#paint0_linear_380_527)"/>
 </g>
 <defs>
 <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
@@ -13,7 +13,7 @@
 <pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1">
 <use xlink:href="#image0_380_527" transform="scale(0.00195312)"/>
 </pattern>
-<linearGradient id="paint0_linear_380_527" x1="40.7727" y1="22.878" x2="6.36746" y2="27.5603" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint0_linear_380_527" x1="679.545" y1="381.301" x2="106.124" y2="459.339" gradientUnits="userSpaceOnUse">
 <stop stop-color="#0052D4"/>
 <stop offset="1" stop-color="#9CECFB"/>
 </linearGradient>
