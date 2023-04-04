@@ -772,4 +772,8 @@ nav li {
         margin-left: 9rem;
         margin-right: 9rem;
     }
+
+    .header-container {
+        margin-left: 9rem;
+    }
 }
