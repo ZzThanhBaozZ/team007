@@ -22,15 +22,28 @@ window.addEventListener('resize', () => {
     updateHeights();
 });
 
+// Show Noti box when clicking
+const notiBox = document.querySelector('.nav-noti-box');
+const notiIcon = document.querySelector('.nav__icon-noti');
 
-var box = document.getElementById('box');
-var isHidden = true;
-function toggleNoti(){
-    if (isHidden) {
-        box.style.display = 'block'; // Đặt giá trị của thuộc tính display thành 'block' để hiển thị phần tử
-        isHidden = false;
-    } else {
-        box.style.display = 'none'; // Đặt giá trị của thuộc tính display thành 'none' để ẩn phần tử
-        isHidden = true;
-    }
-}
+notiIcon.addEventListener('click', function() {
+  const perList = document.querySelector('.per-list');
+  if (perList.classList.contains('show')) {
+    perList.classList.remove('show');
+  }
+
+  notiBox.classList.toggle('show');
+});
+
+// Show perList box when clicking
+const perList = document.querySelector('.per-list');
+const perIcon = document.querySelector('.nav__icon-person');
+
+perIcon.addEventListener('click', function() {
+  const notiBox = document.querySelector('.nav-noti-box');
+  if (notiBox.classList.contains('show')) {
+    notiBox.classList.remove('show');
+  }
+
+  perList.classList.toggle('show');
+});

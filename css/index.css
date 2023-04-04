@@ -87,6 +87,10 @@ nav .log-in-entry {
           user-select: none;
 }
 
+.bell-noti {
+  display: flex;
+}
+
 /*Phần thân*/
 .body1 {
   margin: 3rem 0 3rem 0;
@@ -421,6 +425,37 @@ nav .log-in-entry {
   .mid-noti-container {
     max-height: 280px;
   }
+
+  /* Hover */
+  .a1-box a {
+    position: relative;
+    transition: all 0.5s ease-in-out;
+}
+
+.a1-box:hover a {
+    color: var(--yellow-color);
+}
+
+.a1-box a::before {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: var(--yellow-color);
+    transition: all 0.5s ease-in-out;
+    transform-origin: center;
+}
+
+.a1-box:hover a::before {
+    width: 100%;
+    transform: scaleX(1);
+}
+
+.log-in:hover {
+  background-color: #eeeeee ;
+}  
 }
 
 /*Medium Devies*/
@@ -449,7 +484,7 @@ nav .log-in-entry {
     display: none;
   }
   .noti-box {
-    width: 40%;
+    width: 35%;
   }
   .toggle-expand-noti {
     font-size: 16px;
@@ -626,7 +661,9 @@ nav .log-in-entry {
     height: 35px;
   }
   .a1 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
+    font-weight: var(--extrabold-font);
+    color: var(--white-color);
   }
 }
 /* Large Devices*/
