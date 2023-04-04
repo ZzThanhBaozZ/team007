@@ -82,7 +82,7 @@ body {
 .second-wrapper {
     margin: 2.8rem 1.6rem; 
 }
-
+  
 /* Login text*/
 .login {
     background-color: var(--primary-color);
@@ -253,6 +253,7 @@ button {
 @media (min-width: 46.25em) {
     .body-container {
         max-width: 110rem;
+        min-width: 55rem;
         width: 100%;
         margin: 2rem auto auto;
         display: flex;
@@ -567,4 +568,8 @@ button {
         display: table-cell;
         vertical-align: middle;
     }
-}
+
+    .second-wrapper.large {
+        width: 100%;
+    }
+} 

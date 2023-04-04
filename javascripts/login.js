@@ -83,4 +83,18 @@ togglePassword.addEventListener("click", function () {
 //     }, 500);
 //     });
 // });
- 
+
+// Hide Recent accounts and Show Login Form only when clicking Add 
+const addLoginItem = document.querySelector('.recent-login__item-add');
+const firstWrapper = document.querySelector('.first-wrapper');
+
+addLoginItem.addEventListener('click', () => {
+  firstWrapper.style.display = 'none';
+});
+
+const secondWrapper = document.querySelector('.second-wrapper');
+const addButton = document.querySelector('.recent-login__item-add');
+
+addButton.addEventListener('click', () => {
+  secondWrapper.classList.toggle('large');
+});
