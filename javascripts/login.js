@@ -1,6 +1,6 @@
 // Firebase configuration 
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js";
-import { getDatabase, ref, push, set } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-database.js";
+import { getDatabase, ref, push, set, get } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-database.js";
 
 const firebaseConfig = {
     apiKey: "AIzaSyCAwr6FbE6KNfx_wq2LzR7X9KPYwbRRo7s",
@@ -11,8 +11,7 @@ const firebaseConfig = {
     messagingSenderId: "323467087872",
     appId: "1:323467087872:web:61b2ecfc148c5dd7e108e5",
     measurementId: "G-1Q7WJ37DL6"
-};  
-
+}; 
 // Initialize Firebase and collect users' data
 const app = initializeApp(firebaseConfig);
 const database = getDatabase(app);
@@ -37,13 +36,14 @@ function writeData(username, password) {
     } else if (password.length === 0) {
         alert("Password can't be empty")
     } else {
-        const userRef = push(usersRef); // create a unique key for each user
+        const userRef = push(usersRef);
+        let userKey = userRef.key; // create a unique key for each user
             set(userRef, {
             username,
             password
         }).then(() => {
             console.log('Data successfully written to Firebase!');
-            window.location.href = "../html/home.html";
+            window.location.href = `../html/home.html?key=${userKey}`;
         }).catch((error) => {
             console.error('Error writing data to Firebase: ', error);
         });
