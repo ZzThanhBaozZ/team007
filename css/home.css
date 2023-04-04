@@ -77,6 +77,10 @@ nav li {
     align-items: center;
 }
 
+.nav__icon > img {
+    height: 3rem;
+}
+
 .nav__icon-person {
     position: relative;  
 }
@@ -219,7 +223,7 @@ nav li {
 }
 
 .subpages-wrap {
-    padding: 2.8rem 3rem;
+    padding: 2.8rem 1.2rem;
 }
 
 .subpages-wrap:nth-child(2) {
@@ -253,7 +257,7 @@ nav li {
 }
 
 .web-wrap {
-    padding: 2.8rem 2rem 2.8rem 3rem;
+    padding: 2.8rem 2rem 2.8rem 1.2rem;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -438,9 +442,6 @@ nav li {
 
 /* For extremely small screen devices (595px and below) */
 @media only screen and (max-width: 595px) {
-    .DHCQ {
-        display: none;
-    }
     .nav__ham {
         padding: 1.6rem 2rem;
     }
@@ -453,6 +454,10 @@ nav li {
     .hero__foot {
         font-size: 2.4rem;
         line-height: 5rem;
+    }
+
+    .school-img {
+        width: 6.2rem;
     }
 }
 
