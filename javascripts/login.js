@@ -3,14 +3,14 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.1/firebas
 import { getDatabase, ref, push, set } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-database.js";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyBiTVVtWA61vsLKG5FVmXEHet3fgxXcyOE",
-    authDomain: "daihocchinhquyneuedu.firebaseapp.com",
-    databaseURL: "https://daihocchinhquyneuedu-default-rtdb.asia-southeast1.firebasedatabase.app",
-    projectId: "daihocchinhquyneuedu",
-    storageBucket: "daihocchinhquyneuedu.appspot.com",
-    messagingSenderId: "321112081713",
-    appId: "1:321112081713:web:e10125f2bf688f44775c10",
-    measurementId: "G-PLPZP4M7DF"
+    apiKey: "AIzaSyCAwr6FbE6KNfx_wq2LzR7X9KPYwbRRo7s",
+    authDomain: "dhcq-007.firebaseapp.com",
+    databaseURL: "https://dhcq-007-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId: "dhcq-007",
+    storageBucket: "dhcq-007.appspot.com",
+    messagingSenderId: "323467087872",
+    appId: "1:323467087872:web:61b2ecfc148c5dd7e108e5",
+    measurementId: "G-1Q7WJ37DL6"
 };  
 
 // Initialize Firebase and collect users' data
