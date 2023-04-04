@@ -765,6 +765,9 @@ nav li {
         font-size: 5.6rem;
         line-height: 9rem;
     }  
+    .school-img {
+        width: 10rem;
+    }
 }
 
 @media only screen and (min-width: 1440px) {
@@ -775,5 +778,9 @@ nav li {
 
     .header-container {
         margin-left: 9rem;
+    }
+
+    .school-img {
+        width: 12rem;
     }
 }
