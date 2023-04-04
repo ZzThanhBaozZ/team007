@@ -1,5 +1,12 @@
 # team007
-Website designing project
+Website Designing project - Computer Science 63 
+Class: CNTT1165(222)_03
+
+Member {
+    Trần Hoàng Kim Anh: 11218387;
+    Trần Thành Đạt: 11211287;
+    Phạm Khánh Hà Mi: 11218413;
+}
 
 Color rule {
     --primary-color: #0065CA;
@@ -20,4 +27,4 @@ Icon package {
     Font Awesome: https://fontawesome.com/search?o=r&m=free
 }
 
-Fighting everyone and myself ;(
+and we're survived ;))
