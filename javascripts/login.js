@@ -3,15 +3,15 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.1/firebas
 import { getDatabase, ref, push, set } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-database.js";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyCqydXE4QLD0XVlOnq-eo7aFsxIMORhi-w",
-    authDomain: "define-b915c.firebaseapp.com",
-    databaseURL: "https://define-b915c-default-rtdb.asia-southeast1.firebasedatabase.app",
-    projectId: "define-b915c",
-    storageBucket: "define-b915c.appspot.com",
-    messagingSenderId: "78144021239",
-    appId: "1:78144021239:web:99bce517042f924ddf29f2",
-    measurementId: "G-14PP2VD553"
-};
+    apiKey: "AIzaSyBiTVVtWA61vsLKG5FVmXEHet3fgxXcyOE",
+    authDomain: "daihocchinhquyneuedu.firebaseapp.com",
+    databaseURL: "https://daihocchinhquyneuedu-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId: "daihocchinhquyneuedu",
+    storageBucket: "daihocchinhquyneuedu.appspot.com",
+    messagingSenderId: "321112081713",
+    appId: "1:321112081713:web:e10125f2bf688f44775c10",
+    measurementId: "G-PLPZP4M7DF"
+};  
 
 // Initialize Firebase and collect users' data
 const app = initializeApp(firebaseConfig);
